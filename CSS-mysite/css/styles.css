@@ -4,39 +4,48 @@ dark burgundy plum #541212;
 light olive green #8B9A46;
 pale bluish gray #EEEEEE;
 */
+
 body {
     margin: 0;
-    /* background-color: #0F0E0E; */
+    background-color: #EEEEEE;
+    text-align: center;
 }
 
-div,
 h1 {
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
+    position: relative;
 } 
-
-.middle-container,
-.bottom-container
- {
-    height: 200px;
-    width: 200px;
-}
 
 .top-container {
     background-color: #EEEEEE;
     color: #541212;
+    position: relative;
+    padding-top: 100px;
 }
 
+.top-cloud {
+    /* position: relative; */
+    position: absolute;
+    /* margin-left: 30%; */
+    right: 300px;
+    top: 50px;
+}
+.bottom-cloud {
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+}
 
-.middle-container {
-    background-color: #541212;
+*.middle-container {
+    background-color: red;
+    height: 200px;
+    width: 200px;
     border: solid 20px black;
     margin-left: 260px;
 }
-
-.bottom-container {
-    background-color: #8B9A46;
+*.bottom-container {
+    background-color: blue;
+    height: 200px;
+    width: 200px;
     margin-left: 500px;
     border: solid 10px black;
 }
