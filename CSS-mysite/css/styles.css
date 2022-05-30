@@ -15,16 +15,28 @@ body {
 h1 {
     position: relative;
     font-family: 'Cookie', cursive;
+    font-size: 5.6rem;
+    margin: 50px auto 0 auto;
 } 
 
 h2 {
     font-family: 'Tiro Tamil', serif;
+    font-size: 2.5rem; 
+}
+
+h1, 
+h2 {
+    color: #66bfbf;
 }
 
 h3 {
     font-family: 'Tiro Tamil', serif;
 }
 
+h3, 
+a {
+    color: #11999e;
+}
 .top-container {
     background-color: #EEEEEE;
     color: #541212;
@@ -56,7 +68,7 @@ h3 {
     max-width: 30%;
     border-radius: 20%;
 }
-*.middle-container {
+/* *.middle-container {
 }
 *.bottom-container {
-}
+} */
