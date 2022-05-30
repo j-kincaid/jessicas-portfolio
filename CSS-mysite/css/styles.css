@@ -9,11 +9,21 @@ body {
     margin: 0;
     background-color: #EEEEEE;
     text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 h1 {
     position: relative;
+    font-family: 'Cookie', cursive;
 } 
+
+h2 {
+    font-family: 'Tiro Tamil', serif;
+}
+
+h3 {
+    font-family: 'Tiro Tamil', serif;
+}
 
 .top-container {
     background-color: #EEEEEE;
@@ -23,29 +33,30 @@ h1 {
 }
 
 .top-cloud {
-    /* position: relative; */
     position: absolute;
-    /* margin-left: 30%; */
     right: 300px;
     top: 50px;
 }
+
 .bottom-cloud {
     position: absolute;
     left: 300px;
     bottom: 300px;
 }
 
+.profile-image {
+    max-width: 10%;
+    border-radius: 50%;
+}
+.vest-image {
+    max-width: 10%;
+    border-radius: 20%;
+}
+.beadwork-image {
+    max-width: 30%;
+    border-radius: 20%;
+}
 *.middle-container {
-    background-color: red;
-    height: 200px;
-    width: 200px;
-    border: solid 20px black;
-    margin-left: 260px;
 }
 *.bottom-container {
-    background-color: blue;
-    height: 200px;
-    width: 200px;
-    margin-left: 500px;
-    border: solid 10px black;
 }
