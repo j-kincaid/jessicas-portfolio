@@ -29,6 +29,10 @@ h2 {
     color: #66bfbf;
 }
 
+h2 {
+    font-weight: normal;
+}
+
 h3 {
     font-family: 'Tiro Tamil', serif;
 }
