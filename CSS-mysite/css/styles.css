@@ -61,16 +61,29 @@ a {
 }
 
 .profile-image {
-    max-width: 10%;
     border-radius: 50%;
+    max-width: 10%;
+}
+
+.skill-row {
+    line-height: 2;
+    margin: 100px auto;
+    text-align: left;
+    width: 50%;
+}
+
+.beadwork-image,
+.vest-image {
+    border-radius: 20%;
+    padding: 30px;
+    width: 25%;
+}
+
+.beadwork-image {
+    float: right;
 }
 .vest-image {
-    max-width: 10%;
-    border-radius: 20%;
-}
-.beadwork-image {
-    max-width: 30%;
-    border-radius: 20%;
+    float: left;
 }
 /* *.middle-container {
 }
