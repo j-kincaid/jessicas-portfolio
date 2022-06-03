@@ -18,12 +18,25 @@ top container and three little dots in hr #EAEAF6;
 dark teal p font #40514E;
 
 font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif;
 font-family: 'Sacramento', cursive;
+
 */
 body {
+    color: #40514E;
     margin: 0;
     font-family: 'Merriweather', serif;
     text-align: center;
+}
+
+div.profile {
+    margin-top: 4em;
+}
+hr {
+    border: dotted #EAF6F6 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
 }
 
 h1 {
@@ -35,22 +48,31 @@ h1 {
 } 
 
 h2 {
-    font-family: 'Merriweather', serif;
-    font-size: 2.5rem;  
-    font-weight: normal;   
     color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;  
+    font-weight: normal; 
+    padding-bottom: 10px;
 }
 
-h3, 
+h3 {
+    color:  #11999E;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
 a {
     color:  #11999E;
     text-decoration: none;
-    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
 }
 
+a:hover {
+    color: #EAF6F6;
+}
 .top-container {
     background-color: #EAEAF6;
-    color: #541212;
     position: relative;
     padding-top: 100px;
 }
@@ -58,17 +80,17 @@ a {
 .top-cloud {
     position: absolute;
     right: 300px;
-    top: 50px;
+    top: 40px;
 }
 
 .bottom-cloud {
     position: absolute;
-    left: 300px;
+    left: 250px;
     bottom: 300px;
 }
 
 p {
-    color: #40514E;
+    line-height: 2;
     margin-bottom: 4em;
 }
 
@@ -78,12 +100,25 @@ p {
 }
 
 .skill-row {
-    line-height: 2;
     margin: 100px auto;
     text-align: left;
     width: 50%;
 }
 
+.intro {
+    width: 30%;
+    margin: auto;
+}
+
+div.contact-me {
+    width: 40%;
+    margin: 40px auto 60px;
+}
+.copyright {
+    color: #EAEAF6;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
 .beadwork-image,
 .vest-image {
     border-radius: 20%;
@@ -97,12 +132,13 @@ p {
 .vest-image {
     float: left;
 }
-/* *.middle-container {
-} */
+.middle-container {
+    padding-top: 100px 0;
+} 
 
 .bottom-container {
     background-color: #66BFBF;
-    height: 150px;
+    padding: 50px 0 20px;
 }
 
 ul.bottom-container {
@@ -122,9 +158,7 @@ ul.bottom-container {
     list-style-type: none;
     text-align: center;
 }
-div.contact-me {
-    height: 20em;
-}
+
 a.btn {
     margin: auto 40px;
     background: #3498db;
@@ -136,7 +170,7 @@ a.btn {
     -webkit-border-radius: 28;
     -moz-border-radius: 28;
     border-radius: 8px;
-    font-family: Arial;
+    font-family: 'Montserrat', sans-serif;
     color: #ffffff;
     font-size: 20px;
     padding: 10px 20px 10px 20px;
