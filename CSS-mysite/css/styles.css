@@ -120,16 +120,16 @@ div.contact-me {
     padding: 20px 0;
 }
 .beadwork-image,
-.vest-image {
+.django {
     border-radius: 20%;
     padding: 30px;
-    width: 25%;
+    width: 45%;
 }
 
 .beadwork-image {
     float: right;
 }
-.vest-image {
+.django {
     float: left;
 }
 .middle-container {
