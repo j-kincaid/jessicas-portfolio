@@ -1,28 +1,6 @@
-/* My Colors
-greenish black #0F0E0E;
-dark burgundy plum #541212;
-light olive green #8B9A46;
-pale bluish gray #EEEEEE;
-*/
+/* 
 
-/* Example styles
-
-light blue background #EAF6F6;
-
-turquoise for h1 #66BFBF;
-
-bluer aqua for h2 #11999E;
-
-top container and three little dots in hr #EAEAF6;
-
-dark teal p font #40514E;
-
-font-family: 'Merriweather', serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Sacramento', cursive;
-
-
-Orange colors
+Orange color palette
 
 Primary #c15000;
 Light #fa7f37;
@@ -173,10 +151,6 @@ ul.bottom-container {
     text-align: center;
     color: #fff;  
 }
-
-/* Primary #c15000;
-Light #fa7f37;
-Dark #8a2100; */
 
 a.btn {
     margin: auto 40px;
