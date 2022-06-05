@@ -1,11 +1,9 @@
 /* 
-
 Orange color palette
 
 Primary #c15000;
 Light #fa7f37;
 Dark #8a2100;
-
 */
 body {
     color: #514740;
@@ -14,14 +12,17 @@ body {
     text-align: center;
 }
 
-div.profile {
-    margin-top: 4em;
+.top-container {
+    background-color: #eeeeee;
+    position: relative;
+    padding-top: 100px;
 }
-hr {
-    border: dotted #f6eeea 6px;
-    border-bottom: none;
-    width: 4%;
-    margin: 80px auto;
+
+
+.top-cloud {
+    position: absolute;
+    right: 300px;
+    top: 40px;
 }
 
 h1 {
@@ -41,6 +42,44 @@ h2 {
     z-index: 3; 
 }
 
+.bottom-cloud {
+    position: absolute;
+    left: 250px;
+    bottom: 200px;
+    /* media queries: for narrow screens < 1092px change to z-index: -1; */
+}
+
+.middle-container {
+    padding-top: 100px 0;
+} 
+
+div.profile {
+    margin-top: 4em;
+}
+
+.profile-image {
+    border-radius: 50%;
+    max-width: 10%;
+}
+
+p {
+    line-height: 2;
+    margin-bottom: 4em;
+}
+
+hr {
+    border: dotted #f6eeea 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 80px auto;
+}
+
+.skill-row {
+    margin: 100px auto;
+    text-align: left;
+    width: 60%;
+}
+
 h3 {
     color:  #c15000;
     text-decoration: none;
@@ -56,42 +95,6 @@ a {
 
 .bottom-container a:hover {
     color: #c15000;
-}
-
-.top-container {
-    background-color: #eeeeee;
-    position: relative;
-    padding-top: 100px;
-}
-
-.top-cloud {
-    position: absolute;
-    right: 300px;
-    top: 40px;
-}
-
-.bottom-cloud {
-    position: absolute;
-    left: 250px;
-    bottom: 200px;
-    /* media queries: for narrow screens < 1092px change to z-index: -1; */
-    
-}
-
-p {
-    line-height: 2;
-    margin-bottom: 4em;
-}
-
-.profile-image {
-    border-radius: 50%;
-    max-width: 10%;
-}
-
-.skill-row {
-    margin: 100px auto;
-    text-align: left;
-    width: 60%;
 }
 
 .intro {
@@ -123,10 +126,6 @@ div.contact-me {
 .trivial-image {
     float: left;
 }
-.middle-container {
-    padding-top: 100px 0;
-} 
-
 .bottom-container {
     background-color: #8a2100;;
     padding: 50px 0 20px;
