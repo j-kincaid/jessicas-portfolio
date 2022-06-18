@@ -28,7 +28,6 @@ body {
     color: #000;
     margin: 0;
     font-family: 'Martel Sans', sans-serif;
-    /* font-family: 'Tiro Devanagari Sanskrit', serif; */
     text-align: center;
 }
 
@@ -43,6 +42,7 @@ body {
     background-color: #fffde7;
     padding: 10% 0 3% 0;
 }
+
 hr {
     border: dotted #bec5b7 6px;
     border-bottom: none;
@@ -94,25 +94,6 @@ a {
     text-decoration: none;
     font-family: 'Martel Sans', sans-serif;
     margin: 10px 20px;
-}
-
-.bottom-container a:hover {
-    color: #c15000;
-}
-
-
-.top-cloud {
-    position: absolute;
-    right: 300px;
-    top: 40px;
-}
-
-.bottom-cloud {
-    position: absolute;
-    left: 250px;
-    bottom: 200px;
-    /* media queries: for narrow screens < 1092px change to z-index: -1; */
-    
 }
 
 p {
