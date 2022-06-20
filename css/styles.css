@@ -76,8 +76,8 @@ h2 {
 
 .bottom-cloud {
     position: absolute;
-    left: 250px;
-    bottom: 200px;
+    left: 125px;
+    bottom: 250px;
     /* media queries: for narrow screens < 1092px change to z-index: -1; */
 }
 
@@ -210,4 +210,8 @@ a.btn {
     background-image: -o-linear-gradient(top, #8e5af0, #7e3ff2);
     background-image: linear-gradient(to bottom, #8e5af0, #7e3ff2);
     text-decoration: none;
+  }
+
+  .contact-me h3 {
+    color: #022902;
   }
