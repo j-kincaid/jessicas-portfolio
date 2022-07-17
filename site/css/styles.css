@@ -1,0 +1,193 @@
+/* My Colors
+
+*=*=*=*=*=*=*=*=*=*=*
+light green and yellow
+Daylight theme
+*=*=*=*=*=*=*=*=*=*=*
+
+Black and White text. 
+Primary light yellow #fffde7;
+Secondary light green #f18e9;
+P, S - Light #fff;
+P - Dark #cccab5;
+S - Dark #bec5b7;
+
+FONTS
+
+font-family: 'Cinzel', serif;
+font-family: 'Martel Sans', sans-serif;
+font-family: 'Tiro Devanagari Sanskrit', serif;
+
+*=*=*=*=*=*=*=*=*=*=*
+
+*/
+
+
+body {
+    background-color:  #fffde7;
+    color: #000;
+    margin: 0;
+    font-family: 'Martel Sans', sans-serif;
+    text-align: center;
+}
+
+.top-container {
+    background-color: #cccab5;
+    position: relative;
+    padding-top: 100px;
+    color: #000;
+}
+
+.subheading {
+    background-color: #fffde7;
+    padding: 10% 0 3% 0;
+}
+
+hr {
+    border: dotted #bec5b7 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 80px auto;
+}
+
+
+.middle-container {
+    background-color: #fff;
+    border-bottom: 5vh solid #fff;
+    margin-top: 5%;
+    padding-top: 100px 0;
+} 
+
+
+.profile-image {
+    margin-top: 100px;
+    max-width: 25%;
+}
+
+div.profile {
+    margin: 15%;
+    margin-top: 4em;
+}
+
+
+h1 {
+    position: relative;
+    font-family: 'Cinzel', serif;
+    font-size: 3.5rem;
+    margin: 50px auto 0 auto;
+} 
+
+h2 {
+    font-family: 'Tiro Devanagari Sanskrit', serif;
+    font-size: 2.0rem;  
+    font-weight: normal; 
+    padding-bottom: 10px;
+    z-index: 3; 
+}
+
+h3 {
+    text-decoration: none;
+    font-family: 'Tiro Devanagari Sanskrit', serif;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Martel Sans', sans-serif;
+    margin: 10px 20px;
+}
+
+p {
+    line-height: 2;
+    margin-bottom: 4em;
+}
+
+
+.skill-row {
+    margin: 100px auto;
+    text-align: left;
+    width: 60%;
+}
+
+.intro {
+    width: 30%;
+    margin: auto;
+}
+
+div.contact-me {
+    width: 40%;
+    margin: 40px auto 60px;
+}
+
+.copyright {
+    color: #EAEAF6;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+.beadwork-image,
+.trivial-image,
+.django {
+    border-radius: 20%;
+    padding: 30px;
+    width: 45%;
+}
+
+.beadwork-image {
+    float: right;
+}
+.django,
+.trivial-image {
+    float: left;
+}
+
+.bottom-container {
+    background-color: #bec5b7;
+    margin-top: 5%;
+    padding: 50px 0 20px;
+}
+
+ul.bottom-container {
+    list-style-type: none;
+    text-decoration: none; 
+    color: #fff;  
+}
+
+.bottom-container p {
+    color: #a4ab9e;
+}
+
+.bottom-container a {
+    display: inline-block;
+    position: relative;
+    margin: 30px;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    color: #000;
+}
+
+.bottom-container a:hover {
+    color: #fffde7;
+} 
+
+.btn {
+    
+}
+a.btn {
+    margin: auto 40px;
+    margin-bottom: 100px;
+    background: #000;
+    font-family: 'Martel Sans', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  a.btn:hover {
+    color: #bec5b7;
+  }
+
+  p.copyright {
+    color: #000;
+    font-family: 'Martel Sans', sans-serif;
+  }
