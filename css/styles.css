@@ -99,7 +99,7 @@ div.profile {
 
 p {
     line-height: 2;
-    margin-bottom: 4em;
+    margin-bottom: 3.5em;
 }
 
 hr {
@@ -112,7 +112,7 @@ hr {
 .skill-row {
     margin: 100px auto;
     text-align: left;
-    width: 60%;
+    width: 65%;
 }
 
 h3 {
@@ -148,20 +148,34 @@ div.contact-me {
     padding: 20px 0;
 }
 .beadwork-image,
-.trivial-image,
-.django {
-    border-radius: 20%;
+.django, 
+.curator {
+    border-radius: 12%;
     padding: 30px;
-    width: 45%;
+    width: 40%;
 }
 
-.beadwork-image {
+.trivial-desc {
+    margin-top: 0;
+}
+
+.trivial-image  {
+    border-radius: 20%;
+    padding: 20px;
+    padding-bottom: 5px;
+    width: 25%;
+    height: 5%;
+}
+
+.beadwork-image,
+.curator {
     float: right;
 }
 .django,
 .trivial-image {
     float: left;
 }
+
 .bottom-container {
     background-color: #7e3ff2;;
     padding: 50px 0 20px;
