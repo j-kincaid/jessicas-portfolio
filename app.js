@@ -1,5 +1,5 @@
-class toggleThemeBtn = document.getElementById('toggleThemeBtn');
+class switchElement = document.getElementById('switch');
 
-toggleThemeBtn.addEventListener('click', () => {
+switchElement.addEventListener('click', () => {
     document.body.classList.toggle('dark');
 });

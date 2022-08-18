@@ -23,7 +23,7 @@ body {
 
     /* variables */
     --primary-page-bg: #e7dff3;
-    --primary-text-color: #022902;
+    --primary-text-color: #000;
 
     font-family: 'Comfortaa', cursive;
     margin: 0;
@@ -33,13 +33,36 @@ body {
 body.dark {
     --primary-page-bg: #000056;
     --primary-text-color: #fff;
+    transition: 4s;
+}
+
+.top-container {
+    background-color: var(--top-container-bg);
+    color: var(--top-container-color);
+    --top-container-bg: #f6f3f3;
+    --top-container-color: #000056
+    position: relative;
+    padding-top: 100px;
+}
+
+.top-container.dark {
+    --top-container-bg: #4c3eb5;
+    --top-container-color: #fff;
+    transition: 4s;
 }
 
 h1, 
 h2, 
 h3 {
-    color: #022902;
+    color: var(--heading-text-color);
+    --heading-text-color: #8070f3;
     font-family: 'Pacifico', cursive;
+}
+
+h1.dark,
+h2.dark, 
+h3.dark {
+    --heading-text-color: #fff;
 }
 
 p {
@@ -47,20 +70,13 @@ p {
     font-family: 'Comfortaa', cursive;
 }
 
-.toggleThemeButton {
-    width: 80px;
-    height: 40px;
-    background-color: rgb(0, 5, 33);
-    box-shadow: -10px 15px 20px rgba(50, 50, 50, 0.25);
-    border-radius: 20px;
-    float: right;
-}
 .switch {
     width: 80px;
     height: 40px;
     background-color: rgb(12, 0, 33);
     box-shadow: -10px 15px 20px rgba(50, 50, 50, 0.25);
     border-radius: 20px;
+    
     position: relative;
 }
 
@@ -78,10 +94,6 @@ p {
         inset -4px -4px 4px rgb(195 193 198 / 90%);
 }
 
-button.dark {
-    background-color: #FFFBF7;
-    transition: 4s;
-}
 
 .moon {
     width: 20px;
@@ -93,19 +105,14 @@ button.dark {
     left: 45px;
 }
 
-.dark .flicker {
+.flicker {
     transform: translateX(40px);
 }
 
-.dark > * {
+/* .dark > * {
     color: rgb(250, 239, 196);
     color: #1D1C16;
-}
-.top-container {
-    background-color: #f6f3f3;
-    position: relative;
-    padding-top: 100px;
-}
+} */
 
 
 .top-cloud {
@@ -129,7 +136,7 @@ h1 {
 } 
 
 h2 {
-    color: #4C45FD;
+    /* color: #8070f3; */
     font-family: 'Comfortaa', cursive;
     font-size: 2.0rem;  
     font-weight: normal; 
@@ -179,7 +186,7 @@ hr {
 }
 
 h3 {
-    color:  #4C45FD;
+    /* color:  #4C45FD; */
     text-decoration: none;
     font-family: 'Comfortaa', cursive;
 }
