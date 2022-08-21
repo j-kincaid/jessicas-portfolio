@@ -1,47 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Pacifico&display=swap');
 
 
-/* FONTS 
+/* 
+
+FONTS 
 font-family: 'Comfortaa', cursive;
 font-family: 'Pacifico', cursive;
-*/
 
-/* COLORS
-Primary e7dff3;
-P-Dark #4304be;
-P-light #b56fff;
-
-Secondary #e7dff3;
-S-Dark #b5adc0;
-S-light #ffffff;
+COLORS
+Primary #001684; indigo 
+Text on Primary: #fff;
+P-Dark #000056; dark indigo
+P-light #4c3eb5; light purple
 
 */
 
 body {
-    background-color: #e7dff3;
+    background-color: #e6eaff;
+    color: #000;
     font-family: 'Comfortaa', cursive;
     margin: 0;
     text-align: center;
 }
 
+.top-container {
+    background-color: #fff;
+    color: #000056; 
+    position: relative;
+    padding-top: 100px;
+}
 
 h1, 
 h2, 
 h3 {
-    color: #022902;
+    color: #4c3eb5;
     font-family: 'Pacifico', cursive;
 }
 
 p {
-    color: #022902;
     font-family: 'Comfortaa', cursive;
-}
-
-
-.top-container {
-    background-color: #f6f3f3;
-    position: relative;
-    padding-top: 100px;
+    line-height: 2;
+    margin-bottom: 3.5em;
 }
 
 
@@ -53,7 +52,7 @@ p {
 
 nav, 
 footer {
-    background-color: #7e3ff2;
+    background-color:#4C45FD;
     font-family: 'Pacifico', cursive;
 }
 
@@ -62,11 +61,11 @@ h1 {
     font-family: 'Pacifico', cursive;
     font-size: 5.6rem;
     margin: 50px auto 0 auto;
-    color: #7e3ff2;
+    color: #4C45FD;
 } 
 
 h2 {
-    color: #8e5af0;
+    /* color: #8070f3; */
     font-family: 'Comfortaa', cursive;
     font-size: 2.0rem;  
     font-weight: normal; 
@@ -97,10 +96,7 @@ div.profile {
     max-width: 10%;
 }
 
-p {
-    line-height: 2;
-    margin-bottom: 3.5em;
-}
+
 
 hr {
     border: dotted #f6eeea 6px;
@@ -116,13 +112,13 @@ hr {
 }
 
 h3 {
-    color:  #8e5af0;
+    /* color:  #4C45FD; */
     text-decoration: none;
     font-family: 'Comfortaa', cursive;
 }
 
 a {
-    color:  #8e5af0;
+    color:  #8581fe;
     font-family: 'Pacifico', cursive;
     font-size: 1.3rem;
     margin: 10px 20px;
@@ -130,7 +126,7 @@ a {
 }
 
 .bottom-container a:hover {
-    color: #8e5af0;
+    color: #8581fe;
 }
 
 .intro {
@@ -142,8 +138,9 @@ div.contact-me {
     width: 40%;
     margin: 40px auto 60px;
 }
+
 .copyright {
-    color: #EAEAF6;
+    color: #fff;
     font-size: 0.75rem;
     padding: 20px 0;
 }
@@ -155,6 +152,11 @@ div.contact-me {
     width: 40%;
 }
 
+.video {
+    border-radius: 5%;
+    padding: 30px;
+    width: 40%;
+}
 .trivial-desc {
     margin-top: 0;
 }
@@ -168,7 +170,8 @@ div.contact-me {
 }
 
 .beadwork-image,
-.curator {
+.curator, 
+.video {
     float: right;
 }
 .django,
@@ -177,7 +180,7 @@ div.contact-me {
 }
 
 .bottom-container {
-    background-color: #7e3ff2;;
+    background-color:#6d68fd;;
     padding: 50px 0 20px;
 }
 
@@ -188,7 +191,7 @@ ul.bottom-container {
 }
 
 .bottom-container p {
-    color: #EAEAF6;
+    color: #fff;
 }
 
 .bottom-container a {
@@ -203,32 +206,28 @@ ul.bottom-container {
 
 a.btn {
     margin: auto 40px;
-    background: #7e3ff2;
-    background-image: -webkit-linear-gradient(top, #8e5af0, #7e3ff2);
-    background-image: -moz-linear-gradient(top,top, #8e5af0, #7e3ff2);
-    background-image: -ms-linear-gradient(top, top, #8e5af0, #7e3ff2);
-    background-image: -o-linear-gradient(top, top, #8e5af0, #7e3ff2);
-    background-image: linear-gradient(to bottom, top, #8e5af0, #7e3ff2);
+    background:#6d68fd;
+    background-image: -webkit-linear-gradient(top, #4C45FD,#6d68fd);
+    background-image: -moz-linear-gradient(top,top, #4C45FD,#6d68fd);
+    background-image: -ms-linear-gradient(top, top, #4C45FD,#6d68fd);
+    background-image: -o-linear-gradient(top, top, #4C45FD,#6d68fd);
+    background-image: linear-gradient(to bottom, top, #4C45FD,#6d68fd);
     -webkit-border-radius: 28;
     -moz-border-radius: 28;
     border-radius: 8px;
     font-family: 'Comfortaa', cursive;
-    color: #ffffff;
+    color: #fff;
     font-size: 20px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
   }
   
   a.btn:hover {
-    background: #7e3ff2;
-    background-image: -webkit-linear-gradient(top, #8e5af0, #7e3ff2);
-    background-image: -moz-linear-gradient(top, #8e5af0, #7e3ff2);
-    background-image: -ms-linear-gradient(top, #8e5af0, #7e3ff2);
-    background-image: -o-linear-gradient(top, #8e5af0, #7e3ff2);
-    background-image: linear-gradient(to bottom, #8e5af0, #7e3ff2);
+    background:#6d68fd;
+    background-image: -webkit-linear-gradient(top, #4C45FD,#6d68fd);
+    background-image: -moz-linear-gradient(top, #4C45FD,#6d68fd);
+    background-image: -ms-linear-gradient(top, #4C45FD,#6d68fd);
+    background-image: -o-linear-gradient(top, #4C45FD,#6d68fd);
+    background-image: linear-gradient(to bottom, #4C45FD,#6d68fd);
     text-decoration: none;
-  }
-
-  .contact-me h3 {
-    color: #022902;
   }
