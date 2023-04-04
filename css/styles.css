@@ -36,9 +36,12 @@ h3 {
     color: #4c3eb5;
     font-family: 'Pacifico', cursive;
 }
-
+h2 {
+    margin-bottom: 2px;
+}
 p {
     font-family: 'Comfortaa', cursive;
+    font-size: 18px;
     line-height: 2;
     margin-bottom: 3.5em;
 }
@@ -69,7 +72,6 @@ h2 {
     font-family: 'Comfortaa', cursive;
     font-size: 2.0rem;  
     font-weight: normal; 
-    padding-bottom: 10px;
     z-index: 3; 
 }
 
@@ -85,7 +87,6 @@ h2 {
 } 
 
 div.profile {
-
     margin: 100px auto;
     width: 60%;
     margin-top: 4em;
@@ -149,14 +150,10 @@ div.contact-me {
 .curator {
     border-radius: 12%;
     padding: 30px;
-    width: 40%;
+    width: 45%;
 }
 
-.video {
-    border-radius: 5%;
-    padding: 30px;
-    width: 40%;
-}
+
 .trivial-desc {
     margin-top: 0;
 }
@@ -165,7 +162,7 @@ div.contact-me {
     border-radius: 20%;
     padding: 20px;
     padding-bottom: 5px;
-    width: 25%;
+    width: 30%;
     height: 5%;
 }
 
@@ -174,6 +171,7 @@ div.contact-me {
 .video {
     float: right;
 }
+
 .django,
 .trivial-image {
     float: left;
