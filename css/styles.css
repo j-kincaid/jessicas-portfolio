@@ -97,8 +97,6 @@ div.profile {
     max-width: 10%;
 }
 
-
-
 hr {
     border: dotted #f6eeea 6px;
     border-bottom: none;
@@ -107,9 +105,10 @@ hr {
 }
 
 .skill-row {
-    margin: 100px auto;
+    margin: 110px auto;
     text-align: left;
-    width: 65%;
+    width: 64%;
+    padding-bottom: 1%;
 }
 
 h3 {
@@ -145,8 +144,9 @@ div.contact-me {
     font-size: 0.75rem;
     padding: 20px 0;
 }
+
 .beadwork-image,
-.django, 
+.django-image, 
 .curator {
     border-radius: 12%;
     padding: 30px;
@@ -154,11 +154,14 @@ div.contact-me {
 }
 
 
-.trivial-desc {
-    margin-top: 0;
+.trivial-desc,
+.beadwork-description {
+    margin-top: 3%;
 }
 
-.trivial-image  {
+.trivial-image,
+.comptia-badge  {
+    float: left;
     border-radius: 20%;
     padding: 20px;
     padding-bottom: 5px;
@@ -166,15 +169,11 @@ div.contact-me {
     height: 5%;
 }
 
+.django-image,
 .beadwork-image,
 .curator, 
 .video {
     float: right;
-}
-
-.django,
-.trivial-image {
-    float: left;
 }
 
 .bottom-container {
