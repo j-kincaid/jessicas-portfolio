@@ -73,6 +73,7 @@ h2 {
     font-size: 2.0rem;  
     font-weight: normal; 
     z-index: 3; 
+    margin-top: 2%;
 }
 
 .bottom-cloud {
@@ -115,6 +116,7 @@ h3 {
     /* color:  #4C45FD; */
     text-decoration: none;
     font-family: 'Comfortaa', cursive;
+    font-size: 20px;
 }
 
 a {
@@ -144,36 +146,27 @@ div.contact-me {
     font-size: 0.75rem;
     padding: 20px 0;
 }
-
+.django-image,
+.comptia-badge, 
+.curator, 
 .beadwork-image,
-.django-image, 
-.curator {
+.trivial-image {
     border-radius: 12%;
     padding: 30px;
-    width: 57%;
-}
-
-
-.trivial-desc,
-.beadwork-description {
-    margin-top: 3%;
-}
-
-.trivial-image,
-.comptia-badge  {
-    float: left;
-    border-radius: 20%;
-    padding: 20px;
-    padding-bottom: 5px;
     width: 50%;
     height: 5%;
+    padding-bottom: 5px;
 }
 
-.django-image,
-.beadwork-image,
-.curator, 
-.video {
+.django-image, 
+.comptia-badge, 
+.curator {
     float: right;
+}
+
+.beadwork-image,
+.trivial-image {
+    float: left;
 }
 
 .bottom-container {
