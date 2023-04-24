@@ -18,19 +18,69 @@ body {
     width: 100%;
     height: 100%;
 }
+.switch {
+    width: 80px;
+    height: 40px;
+    background-color: rgb(0, 5, 3);
+    box-shadow: -10px 15px 20px rgb(50 50 50/ 25%);
+    border-radius: 20px;
+    position: relative;
+}
+.flicker {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(234, 227, 189);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: 3s;
+    box-shadow: 
+        inset 4px 4px 4px rgb(245, 220, 155),
+        inset -4px -4px 4px rgb(195 193 198 / 90%);
+}
+
+.dark {
+    background-color: 
+rgba(255,255,255,0.55);
+    transition: 4s;
+}
+
+.moon {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 45px;
+}
+
+.dark .flicker {
+    transform: translateX(40px);
+}
+
+.dark > * {
+    color: rgba(255,255,255,0.55);
+    color: rgba(0, 0, 0, 0.9);
+    /* color: rgb(250, 239, 196);
+    color: #0f0e0d; */
+}
 
 header.main-header {
     padding-top: 2em;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     margin: auto;
+    padding: 40px;
     width: 100%;
     padding-bottom: .5em;
     color: rgba(255,255,255,0.9);
     background-color: rgba(0, 0, 0, 0.55);
 }
 h1 {
-    font-size: 70px;
+    font-size: 100px;
     line-height: 70px;
     font-weight: 300;
     margin: 10px 0;
@@ -60,7 +110,7 @@ h1 {
     color: #4C45FD;
 } 
 h1.name {
-    font-size: 4.75vw;
+    font-size: 6vw;
     margin: 0;
     padding: 5vw 3vw 0 5vw;
     font-weight: lighter;
@@ -93,16 +143,12 @@ div.profile {
     margin-top: 4em;
 }
 
-.profile-image {
-    border-radius: 50%;
-    max-width: 10%;
-}
 
 hr {
-    border: dotted #f6eeea 6px;
+    border: dotted #7b706b 6px;
     border-bottom: none;
     width: 4%;
-    margin: 80px auto;
+    margin: 40px auto;
 }
 
 .skill-row {
