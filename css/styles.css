@@ -1,87 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Pacifico&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Pacifico&display=swap'); */
 
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap');
 
-/* 
-
-FONTS 
-font-family: 'Comfortaa', cursive;
-font-family: 'Pacifico', cursive;
-
-COLORS
-Primary #001684; indigo 
-Text on Primary: #fff;
-P-Dark #000056; dark indigo
-P-light #4c3eb5; light purple
-
-*/
-
+* {
+    box-sizing: border-box;
+    font-family: 'Georama', sans-serif;
+    width: 100%;
+    font-weight: lighter;
+}
 body {
-    background-color: #e6eaff;
-    color: #000;
-    font-family: 'Comfortaa', cursive;
-    margin: 0;
-    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgba(255,255,255,0.9);
+    font-size: 0.5rem;
+    font-family: 'Georama', sans-serif;
+    font-weight: normal;
+    line-height: 1.4;
+    width: 100%;
+    height: 100%;
 }
 
-.top-container {
-    background-color: #fff;
-    color: #000056; 
-    position: relative;
-    padding-top: 100px;
+header.main-header {
+    padding-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    padding-bottom: .5em;
+    color: rgba(255,255,255,0.9);
+    background-color: rgba(0, 0, 0, 0.55);
 }
-
+h1 {
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 300;
+    margin: 10px 0;
+}
 h1, 
-h2, 
 h3 {
-    color: #4c3eb5;
-    font-family: 'Pacifico', cursive;
+    color: rgba(255,255,255,0.55);
 }
 h2 {
+    color: #9895ee;
     margin-bottom: 2px;
 }
 p {
-    font-family: 'Comfortaa', cursive;
+    /* font-family: 'Comfortaa', cursive; */
     font-size: 18px;
     line-height: 2;
     margin-bottom: 3.5em;
 }
 
 
-.top-cloud {
-    position: absolute;
-    right: 300px;
-    top: 40px;
-}
-
-nav, 
-footer {
-    background-color:#4C45FD;
-    font-family: 'Pacifico', cursive;
-}
 
 h1 {
     position: relative;
-    font-family: 'Pacifico', cursive;
+    /* font-family: 'Pacifico', cursive; */
     font-size: 5.6rem;
     margin: 50px auto 0 auto;
     color: #4C45FD;
 } 
-
+h1.name {
+    font-size: 4.75vw;
+    margin: 0;
+    padding: 5vw 3vw 0 5vw;
+    font-weight: lighter;
+    color: rgba(255,255,255,0.55);
+}
 h2 {
-    /* color: #8070f3; */
-    font-family: 'Comfortaa', cursive;
-    font-size: 2.0rem;  
-    font-weight: normal; 
-    z-index: 3; 
-    margin-top: 2%;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    margin: 10px 0;
 }
 
-.bottom-cloud {
-    position: absolute;
-    left: 125px;
-    bottom: 250px;
-    /* media queries: for narrow screens < 1092px change to z-index: -1; */
+h2.headline {
+    font-size: 3vw;
+    font-weight: lighter;
+    padding: 0.25vw 0 0 2vw;
 }
+h2 a:hover {
+    color: #eff5f2;
+}
+
 
 .middle-container {
     padding-top: 100px 0;
@@ -115,13 +115,13 @@ hr {
 h3 {
     /* color:  #4C45FD; */
     text-decoration: none;
-    font-family: 'Comfortaa', cursive;
+    /* font-family: 'Comfortaa', cursive; */
     font-size: 20px;
 }
 
 a {
     color:  #8581fe;
-    font-family: 'Pacifico', cursive;
+    /* font-family: 'Pacifico', cursive; */
     font-size: 1.3rem;
     margin: 10px 20px;
     text-decoration: none;
@@ -193,7 +193,16 @@ ul.bottom-container {
     text-align: center;
     color: #fff;  
 }
-
+footer {
+    margin-top: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    background-color: rgba(255,255,255,0.9);
+    text-align: center;
+}
 a.btn {
     margin: auto 40px;
     background:#6d68fd;
@@ -205,7 +214,7 @@ a.btn {
     -webkit-border-radius: 28;
     -moz-border-radius: 28;
     border-radius: 8px;
-    font-family: 'Comfortaa', cursive;
+    /* font-family: 'Comfortaa', cursive; */
     color: #fff;
     font-size: 20px;
     padding: 10px 20px 10px 20px;
@@ -221,3 +230,11 @@ a.btn {
     background-image: linear-gradient(to bottom, #4C45FD,#6d68fd);
     text-decoration: none;
   }
+
+  footer ul li {
+    padding: .25vw;
+}
+
+footer ul {
+    display: flex;
+}
