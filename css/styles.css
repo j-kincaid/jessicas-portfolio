@@ -1,19 +1,4 @@
-/* color palette
-
-PRIMARY dark olive brown = background-color: #201C00; rgb(242, 229, 106);
-PRIMARY CONTAINER mint green = background-color: #52E569; 
-SECONDARY taupe = background-color: #635F41;
-TERTIARY teal = background-color: #406653;
-TERTIARY CONTAINER mint = background-color: #C2ECD4;
-PAGE BACKGROUND off-white = background-color: 
-rgba(255,255,255,0.55);
-PARAGRAPH TEXT dark brown = color: #1D1C16;
-RESUME ACCOMPLISHMENT AND YEAR TEXT sludge taupe = color: #959181; rgb(149, 145, 129);
-
-*/
-
-
-/* ================================= 
+/* ========================col-1========= 
   Base Element Styles
 ==================================== */
 
@@ -29,12 +14,11 @@ RESUME ACCOMPLISHMENT AND YEAR TEXT sludge taupe = color: #959181; rgb(149, 145,
 body {
     background-color: rgba(0, 0, 0, 0.9);
     color: rgba(255,255,255,0.9);
+    width: 100%;
     font-size: 0.5rem;
     font-family: 'Georama', sans-serif;
     font-weight: normal;
     line-height: 1.4;
-    width: 100%;
-    height: 100%;
 }
 
 .switch {
@@ -61,13 +45,12 @@ body {
 }
 
 .dark {
-    background-color: 
-rgba(255,255,255,0.55);
+    background-color: rgba(255,255,255,0.55);
     transition: 4s;
 }
-.dark .graybtn {
-    text-transform: uppercase;
-    color: rgb(255, 255, 255);  
+.dark {
+    /* text-transform: uppercase; */
+    color: rgba(0, 0, 0, 0.9);
     background-color: rgba(255,255,255,0.0);
 }
 
@@ -88,15 +71,17 @@ rgba(255,255,255,0.55);
 .dark > * {
     color: rgba(255,255,255,0.55);
     color: rgba(0, 0, 0, 0.9);
-    /* color: rgb(250, 239, 196);
-    color: #0f0e0d; */
 }
 
-div.hero,
-div.container {
-    width: 100%;
-    padding: 6vw;
-    margin: auto;
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.col-1, 
+.col-2 {
+    margin: 10vh;
+    width: 80%;
 }
 
 .nav {
@@ -113,25 +98,39 @@ ul {
     list-style: none;
 }
 
-p {
-    display: inline-block;
-    font-size: 1em;
-    margin-bottom: 1.8em;
+col-1.p, 
+col-2.p {
+    font-size: 3.5em;
+    margin: 10vh; 
+    word-wrap: break-word;
 }
 
-p.summary {
-    margin-bottom: 10em;
-}
-
-.hero-img {
+img {
     max-width: 100%;
 }
 
-div.hero h2,
-.skill-row h2  {
-    font-size: 1.75em;
-    padding: 0 2vw;
-    color: #FFF;
+ hr.dots {
+    display: block;
+    ovedflow: hidden;
+    border: none;
+    border-top: 3px dotted black; */
+    
+    
+    height: 2px;
+    margin: 50px 0;
+    margin-bottom: 140px;
+  } 
+  /* hr.dots {
+    border: dotted #7b706b 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 40px auto;
+    margin-bottom: 140px;
+} */
+
+h2, 
+p {
+    max-width: 100%;
 }
 
 h3 {
@@ -142,27 +141,33 @@ h3 {
 h2,
 h3,
 a {
-    margin-bottom: 1vh;
+    margin-top: 3vh;
+    margin-bottom: 10vh;
     padding-bottom: 0;
-    color: rgba(0, 0, 0, 0.55);
     text-decoration: none;
 }
 
-img {
-    max-width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+img.comptia-badge {
+    max-width: 70%;
+}
+
+img.trivial-image {
+    max-width: 80%;
+    margin-top: 10vh;
+}
+img.curator, 
+img.django-image, 
+img.trivial-image, 
+img.comptia-badge, 
+img.beadwork-image {
+    border-radius: 10px;
+    border: 1px gray solid;
 }
 
 div.container h2,
-div.primary-col h2,
-div.secondary-col h2 {
+div.col-1 h2,
+div.col-2 h2 {
     padding: 1em 1em 0.25em 1em;
-}
-
-aside {
-    margin-bottom: 3em;
 }
 
 
@@ -173,9 +178,7 @@ aside {
 
 /*---------HEADER----------*/
 
-header.main-header,
 .top-nav {
-    display: flex;
     flex-direction: column;
     width: 100%;
     padding: 30px;
@@ -210,22 +213,26 @@ h1.name {
 h1 a:hover {
     color: #eff5f2;
 }
+
 h2 {
     font-size: 50px;
     line-height: 40px;
     font-weight: 300;
+    color: rgba(255,255,255,0.55);
     margin: 10px 0;
 }
 
 h2.headline {
     font-size: 3vw;
     font-weight: lighter;
-    text-transform: uppercase;
     padding: 0.25vw 0 0 2vw;
     color: rgba(255,255,255,0.55);
-    /* margin-bottom: 0; */
+    margin-bottom: 3vh;
 }
 
+h2 a:hover {
+    color: rgba(0, 0, 0, 0.9);
+}
 
 /*---------NAVIGATION----------*/
 
@@ -272,11 +279,6 @@ ul.top-nav li a:active,
     color: rgba(255,255,255,0.9);
     background-color:  rgba(0, 0, 0, 0.9);
 }
-
-/* .graybtn {
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.9);
-} */
 /* ---- Dropdown menu  ---- */
 
 div.dropdown {
@@ -327,28 +329,6 @@ div.dropdown {
 
 /* -------------details, image descriptions ---------------*/
 
-div.detail-list {
-    padding-bottom: .5em;
-    font-weight: normal;
-}
-
-ul.detail-list li {
-    color: rgba(255,255,255,0.55);
-    font-size: 1.75rem;
-    font-weight: normal;
-}
-
-p.date {
-    font-size: 1.75rem;
-    margin: 1rem;
-}
-
-p.details {
-    display: inline;
-    font-size: 1.35rem;
-    /* color: rgb(232, 227, 209); */
-}
-
 p.description {
     margin-top: 0.75vw;
     height: 2em;
@@ -360,81 +340,6 @@ p.concept {
     font-size: 1.1rem;
     padding: 1em;
 }
-
-
-/* -------------Resume Page ---------------*/
-
-section.accomplish {
-    width: 98%;
-}
-
-h3.accomplish, 
-dt.year  {
-    color: rgba(255, 255, 255, 0.9);
-    font-weight: 300;
-}
-
-dd.exhibit {
-    width: 88%;
-    padding-bottom: 2vh;
-}
-
-
-/* -------------DESIGN Page ---------------*/
-
-iframe#violet {
-    margin-bottom: 5em;
-    display: block;
-    max-width: 500px;
-    max-height:fit-content;
-    float: right;
-}
-
-div.mobank {
-    border: 2px;
-    margin-top: 2em;
-}
-
-img.artboards {
-    max-width: 90%;
-    margin: auto;
-}
-
-
-.django-image,
-.comptia-badge, 
-.curator, 
-.beadwork-image,
-.trivial-image {
-    border-radius: 12%;
-    padding: 30px;
-    width: 50%;
-    height: 5%;
-    padding-bottom: 5px;
-}
-
-.django-image, 
-.comptia-badge, 
-.curator {
-    float: right;
-}
-
-.beadwork-image,
-.trivial-image {
-    float: left;
-}
-
-/* -------------CONTACT Page ---------------*/
-
-div#contactForm {
-    background-color: rgba(0, 0, 0, 0.55);
-}
-
-img.contact-img {
-    max-width: 100%;
-}
-
-
 
 /*----------FOOTER-------------*/
 .foot {
@@ -450,12 +355,9 @@ header.main-header {
     color: rgba(255,255,255,0.9);
     background-color: rgba(0, 0, 0, 0.55);
 }
-footer {
-    margin-top: 3em;
+footer.main-footer {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    margin: auto;
     width: 100%;
     background-color: rgba(255,255,255,0.9);
     text-align: center;
@@ -515,32 +417,15 @@ footer ul {
         border-style: none;
     }
     div.container h2,
-    div.secondary-col h2 div.primary-col h2,
-    p.description {
+    div.col-1 h2,
+    div.col-2 h2 {
         font-size: 1.25rem;
     }
-    ul.detail-list {
-        margin-top: 1.5vh;
-    }
-    ul.detail-list li {
-        font-size: 1.5rem;
-    }
-    p.details {
-        font-size: 0.75rem;
-    }
+ 
     p {
         font-size: 1.05rem;
         display: inline-block;
         margin-bottom: 0.5em;
-    }
-    p.description {
-        font-size: .75rem;
-    }
-    h3.accomplish {
-        font-size: 1.5rem;
-    }
-    dd.exhibit {
-        margin-top: 4%;
     }
     footer p {
         font-size: 1rem;
@@ -577,15 +462,9 @@ footer ul {
         font-size: 1.75rem;
     }
     div.container h2,
-    div.primary-col h2,
-    div.secondary-col h2 {
-        font-size: 1.25rem;
-    }
-    ul.detail-list {
-        margin-top: .5vh;
-    }
-    ul.detail-list li {
-        font-size: 1.75rem;
+    div.col-1 h2,
+    div.col-2 h2 {
+        font-size: 2.25rem;
     }
     ul.top-nav {
         margin-right: 4.5rem;
@@ -599,17 +478,6 @@ footer ul {
         margin: 2px;
         font-size: 1.5rem;
         border-style: none;
-    }
-    dl.row {
-        font-size: 4rem;
-    }
-    dt.year {
-        font-size: 2.0rem;
-        line-height: 2.75;
-    }
-    dd.exhibit {
-        font-size: 1.8rem;
-        line-height: 1.75;
     }
 }
 
@@ -652,29 +520,8 @@ footer ul {
         font-size: 1.75rem;
         border-style: none;
     }
-    */ ul.detail-list li {
-        font-size: 3.75rem;
-    }
     p.description {
         font-size: 2rem;
-    }
-    p.concept {
-        font-size: 3.75rem;
-        color: rgb(26, 50, 1);
-    }
-    aside {
-        max-width: 60%;
-    }
-    h3.accomplish {
-        font-size: 2.0rem;
-    }
-    dt.year {
-        font-size: 1.35rem;
-        line-height: 1.5;
-    }
-    dd.exhibit {
-        font-size: 1.25rem;
-        line-height: 1.25;
     }
 }
 
@@ -699,29 +546,13 @@ footer ul {
         margin-right: .75em;
         margin-left: .75em;
     }
-    div.primary-col h2 {
+    h2 {
         font-size: 2.25rem;
-    }
-    p.description {
-        font-size: 1.75rem;
-    }
-    p.concept {
-        font-size: 1.25rem;
     }
     button.dropbtn {
         width: 8rem;
     }
     ul.top-nav li a {
         font-size: 1.5rem;
-    }
-    h3.accomplish {
-        font-size: 1.8rem;
-    }
-    dt.year {
-        font-size: 1.30rem;
-    }
-    dd.exhibit {
-        font-size: 1.20rem;
-        line-height: 1.5;
     }
 }

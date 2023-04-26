@@ -1,119 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <meta charset="utf-8">
-      <meta content="width=device-width, initial-scale=1.0" name="viewport">
-      <meta content="Frontend, JavaScript, Beadwork, Surrealism, Abstract Art, Fine Art, Kansas City" name="keywords">
-      <meta content="Jessica Kincaid" name="author">
-      <title>Jessica Kincaid | Creative Work</title>
-        <link rel="stylesheet" href="css/styles.css" type="text/css">
-        <link rel="icon" href="favicon.ico">
-    </head>
-    <body>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Frontend, JavaScript, Beadwork, Surrealism, Abstract Art, Fine Art, Kansas City" name="keywords">
+    <meta content="Jessica Kincaid" name="author">
+    <title>Jessica Kincaid | Creative Work</title>
+      <link rel="stylesheet" href="css/styles.css" type="text/css">
+      <link rel="icon" href="favicon.ico">
+  </head>
+  <body>
       <header class="main-header">
         <div class="switch">
           <div class="flicker"></div>
           <div class="moon"></div>
         </div>
         <h1 class="name"><a href="index.html">Jessica Kincaid</a></h1>
-        <h2 class="headline">creative software developer.</h2>
-
-        <ul class="top-nav">
-
-          <li>
-            <a href="#intern">javascript</a>
-        </li>
-          <li>
-              <div class="dropdown">
-                  <button class="dropbtn">django</button>
-                  <div class="dropdown-content">
-                      <a href="#crit">critnight</a> 
-                      <a href="#mentor">Django Girls</a> 
-                  </div>
-              </div>
-          </li>
-          <li>
-              <a href="#art">art</a>
-          </li>
-      </ul>
+        <h2 class="headline">creative software developer</h2>
       </header>
       <div class="container">
-        <div class="middle-container">
-            <div class="skills">
-              <!-- <h2>Creative Work.</h2> -->
+        
+  <!-- col-1 floats left, col-2 floats right -->
 
-<!-- A visual resume -->
+  <!-- ##########################################
+  COLUMN 1 FLOATS LEFT:
+  crit-night p
+  fine art img
+  comptia p
+  trivial img
+  django-girls p
+  ########################################### -->
 
-                <div class="skill-row" id="crit">
-                  <a href="https://jkincaid.pythonanywhere.com">
-                    <h2>Crit Night, a project in Django</h2>
-                    <img class="curator" src="img/curator.png" alt="link to Crit Night project on pythonanywhere"></a>
-                  <p>Crit Night is designed to accompany an informal art discussion event held at a Kansas City venue. This Django application incorporates: Moderator and Artist accounts, Logins with validation, participants may create, read, update and delete their own artwork entries, and a star-rating voting system with comment fields for contributing to the artistic dialog.</p>
-                </div>
+<!-- START OF COLUMN 1 -->
+        <div class="col-1">
 
+    <!-- crit-night TEXT -->
 
-                <hr/>
-                <div class="skill-row" id="art">
-                  <a href="https://j-kincaid.github.io/Open_studio/">
-                  <h2>Fine Art Portfolio</h2>
-                  <img class="beadwork-image" src="img/order2disorder.jpg" alt="pictorial beaded textile">
-                  </a>
-                  <p class="beadwork-description">I've been collectiong beads and making textiles with them since I was eight years old. I've earned a Masters in Fine Art, and my work has been exhibited internationally. Check out the site I created for my art!</p>
-                </div>
+          <a href="https://jkincaid.pythonanywhere.com">
+            <h2>Crit Night, a project in Django</h2>
+          </a>
+          <p>Crit Night is designed to accompany an informal art discussion event held at a Kansas City venue. This Django application incorporates: Moderator and Artist accounts, Logins with validation, participants may create, read, update and delete their own artwork entries, and a star-rating voting system with comment fields for contributing to the artistic dialog.</p>
 
-                <hr/>
-                <div class="skill-row">
-                  <a href="https://www.comptia.org/certifications/a#overview">
-                  <h2 class="comptia-desc">CompTIA A+ Certification, Valid 2021-2024</h2>
-                  <img class="comptia-badge" src="img/comptia.png" alt="link to CompTIA A+ overview">
-                  </a>
-                  <p class="comptia-description">The CompTIA A+ certification requires that candidates pass two exams in professional IT troubleshooting for technical support roles. CompTIA A+ appears in more tech support job listings than any other IT credential.</p>
-                </div>
+         <hr class="dots">
 
-                <hr/>
+  <!-- fine art IMG -->
 
-                <div class="skill-row" id="intern">
-                  <a href="https://www.withtrivial.com/">
-                  <h2 class="trivial-desc">Development Internship, Trivial, Inc., 2022</h2>
-                  <img class="trivial-image" src="img/trivial.png" alt="link to Trivial, Inc">
-                  </a>
-                
-                  <p class="trivial-description">During the Development Internship with Trivial I became acclimated to the Agile environment as part of a professional development team. This was my first remote startup role. I contributed to a JavaScript action library to integrate actions into the codebase of a RESTful application. I used the Postman API platform and Mocha for testing within our automation product.</p>
-                </div>
+          <a href="https://j-kincaid.github.io/Open_studio/">
+            <img  src="img/order2disorder.jpg" class="beadwork-image" alt="pictorial beaded textile">
+          </a>
 
-                <hr/>
+          <hr class="dots">
+  <!-- comptia TEXT -->
+          <a href="https://www.comptia.org/certifications/a#overview">
+              <h2 class="comptia-desc">CompTIA A+ Certification, Valid 2021-2024</h2>
+            </a>
+          <p class="comptia-description">The CompTIA A+ certification requires that candidates pass two exams in professional IT troubleshooting for technical support roles. CompTIA A+ appears in more tech support job listings than any other IT credential.</p>
 
-                <div class="skill-row" id="mentor">
-                  <a href="https://djangogirls.org/en/kansascity/">
-                    <h2>DjangoGirls KC Mentor Director, 2019-2022</h2>
-                    <img class="django-image" src="img/djangogirls.png" alt="link to DjangoGirls blog">
-                  </a>
-                  <p>Django Girls is a yearly event facilitated by Kansas City Women in Technology. My responsibilities as Mentor Director have included recruitment of mentors; planning and organization of the event; placement of mentors and attendees in small groups; and design of custom swag.</p>
-                </div>
+          <hr class="dots">
+  <!-- trivial IMG -->
 
-            </div>
-            <hr>
-            <div class="contact-me">
-              <h2>Get In Touch</h2>
-              <h3 class="contact-me">If you love my artwork or are interested in hiring me for development work.</h3>
-              <br />
-              <a class="btn" href="mailto:4j.kincaid@gmail.com">CONTACT ME</a>
-            </div>
-          </div>
+          <a href="https://www.withtrivial.com/">
+            <img class="trivial-image" src="img/trivial.png"  alt="link to Trivial, Inc">
+          </a>
+
+          <hr class="dots">
+  <!-- django-girls TEXT -->
+
+          <a href="https://djangogirls.org/en/kansascity/">
+            <h2>DjangoGirls KC Mentor Director, 2019-2022</h2>
+          </a>
+          <p>Django Girls is a yearly event facilitated by Kansas City Women in Technology. My responsibilities as Mentor Director have included recruitment of mentors; planning and organization of the event; placement of mentors and attendees in small groups; and design of custom swag.</p>
+<!-- END OF COLUMN 1 -->
         </div>
-          
-          
-<div class="bottom-container">
-            <a href="https://jessicakincaid.com/"><li>Artwork</li></a>
-            <a href="https://www.linkedin.com/in/jessicakincaid/"><li>LinkedIn</li></a>
-            <a href="https://github.com/j-kincaid"><li>GitHub</li></a>
-  <p class="copyright">© 2023 Jessica Kincaid.</p>
-</div>
-<script src="app.js"></script>
-<script src="script.js"></script>
-</div>
 
-<footer class="main-footer">
+  <!-- ##########################################
+
+  COLUMN 2 FLOATS RIGHT:
+
+  crit-night img
+  fine art p
+  comptia img
+  trivial p
+  django-girls img
+
+  ########################################### -->
+<!-- START OF COLUMN 2 -->
+          <div class="col-2">
+    <!-- crit-night img -->
+            <a href="https://jkincaid.pythonanywhere.com">
+            <img class="curator" src="img/curator.png" alt="link to Crit Night project on pythonanywhere"></a>
+
+            <hr class="dots">
+  <!-- fine art TEXT -->
+            <a href="https://j-kincaid.github.io/Open_studio/">
+            <h2>Fine Art Portfolio</h2></a>
+            <p class="beadwork-description">I've been collecting beads and making textiles with them since I was eight years old. I've participated in numerous solo and group exhibitions. My award-winning work has been exhibited internationally. Check out the site I created for my art!</p>
+
+            <hr class="dots">
+  <!-- comptia img -->
+            <a href="https://www.comptia.org/certifications/a#overview">
+            <img class="comptia-badge" src="img/comptia.png" alt="link to CompTIA A+ overview"></img></a>
+
+            <hr class="dots">   
+  <!-- trivial TEXT -->
+            <a href="https://www.withtrivial.com/">
+            <h2 class="trivial-desc">Development Internship, Trivial, Inc., 2022</h2></a>
+        
+            <p class="trivial-description">During the Development Internship with Trivial I became acclimated to the Agile environment as part of a professional development team. This was my first remote startup role. I contributed to a JavaScript action library to integrate actions into the codebase of a RESTful application. I used the Postman API platform and Mocha for testing within our automation product.</p>
+            <hr class="dots">
+  <!-- django-girls img -->
+            <a href="https://djangogirls.org/en/kansascity/">
+            <img class="django-image" src="img/djangogirls.png" alt="link to DjangoGirls site"></a>
+            <hr class="dots">
+<!-- END OF COLUMN 2 -->
+          </div>
+          <!-- <div class="contact-me">
+            <h2>Get In Touch</h2>
+            <h3>If you love my artwork or are interested in hiring me for development work.</h3>
+            <br />
+            <a class="btn" href="mailto:4j.kincaid@gmail.com">CONTACT ME</a>
+          </div> -->
+        <!-- </div> -->
+          <!-- <div class="bottom-container">
+                      <a href="https://jessicakincaid.com/"><li>Artwork</li></a>
+                      <a href="https://www.linkedin.com/in/jessicakincaid/"><li>LinkedIn</li></a>
+                      <a href="https://github.com/j-kincaid"><li>GitHub</li></a>
+            <p class="copyright">© 2023 Jessica Kincaid.</p>
+          </div> -->
+  <!-- </div> -->
+
+</div>
+  <footer class="main-footer">
   <ul>
       <li>
           <a href="https://www.instagram.com/jessica.kincaid" target="_blank"><img alt="instagram icon" src="img/instagram2.png"></a>
@@ -123,9 +140,11 @@
       </li>
   </ul>
   <p class="foot"><small>&copy; 2023 Jessica Kincaid</small></p>
-</footer>
-<!-- /footer -->
-<!-- /.container -->
-<script src="script.js"></script>
-    </body>
+  </footer>
+
+  <!-- /footer -->
+  <!-- /.container -->
+  <script src="app.js"></script>
+  <script src="script.js"></script>
+  </body>
 </html>
