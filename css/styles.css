@@ -9,7 +9,7 @@
     font-weight: lighter;
 }
 body {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);ƒ
     color: rgba(255,255,255,0.9);
     font-size: 0.5rem;
     font-family: 'Georama', sans-serif;
@@ -143,7 +143,6 @@ div.profile {
     margin-top: 4em;
 }
 
-
 hr {
     border: dotted #7b706b 6px;
     border-bottom: none;
@@ -192,13 +191,15 @@ div.contact-me {
     font-size: 0.75rem;
     padding: 20px 0;
 }
+
 .django-image,
 .comptia-badge, 
 .curator, 
 .beadwork-image,
 .trivial-image {
-    border-radius: 12%;
-    padding: 30px;
+    border: 0.5px solid darkgray;
+    border-radius: 2%;
+    padding: 10px;
     width: 50%;
     height: 5%;
     padding-bottom: 5px;
@@ -216,13 +217,15 @@ div.contact-me {
 }
 
 .bottom-container {
+    text-align: center;
     background-color:#6d68fd;;
     padding: 50px 0 20px;
 }
 
-ul.bottom-container {
+.bottom-container ul {
     list-style-type: none;
     text-decoration: none; 
+    margin: 40px auto;
     color: #fff;  
 }
 
