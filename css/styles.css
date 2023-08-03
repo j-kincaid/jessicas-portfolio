@@ -9,6 +9,7 @@ html {
   font-weight: lighter;
 }
 body {
+  /* display: block; */
   background-color: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 0.9);
   font-size: 0.5rem;
@@ -66,7 +67,7 @@ body {
 
 header,
 footer {
-  display: block;
+  /* display: block; */
   color: rgba(255, 255, 255, 0.9);
   background-color: rgba(0, 0, 0, 0.55);
 }
@@ -97,7 +98,7 @@ h3 {
 }
 
 h2 {
-  color: #9895ee;
+  color: #e1a80b;
   margin-bottom: 2rem;
 }
 
@@ -109,7 +110,7 @@ p {
 }
 
 h2.skill {
-  font-size: 2em;
+  font-size: 1.8rem;
   line-height: 40px;
   font-weight: 300;
   margin: 2rem 0;
@@ -152,12 +153,12 @@ a {
 img.django-image,
 img.comptia-badge,
 img.beadwork-image,
-img.trivial-image {
+img.trivial-image,
+img.crit-badge {
   flex: 2;
   border: 0.5px solid darkgray;
   border-radius: 2%;
   max-width: 40%;
-  max-height: 40%;
   padding-bottom: 5px;
 }
 
@@ -166,8 +167,9 @@ img.trivial-image {
   height: 63%;
 } */
 
-.django-image,
-.comptia-badge {
+img.django-image,
+img.comptia-badge,
+img.crit-badge {
   order: 2;
   margin-bottom: 20px;
 }
@@ -178,23 +180,25 @@ p.paragraph-right {
 }
 
 footer {
-  color: #fff;
+  display: block;
+  color: #000;
   font-size: 1.5rem;
-  background-color: #6d68fd;
+  background-color: #e1a80b;
   padding: 50px 0 20px;
   text-align: center;
 }
 
-footer ul {
+footer ul,
+p.copyright {
   list-style-type: none;
   text-decoration: none;
   margin: 40px auto;
-  color: #fff;
+  font-weight: normal;
+  color: #000;
 }
 footer ul li {
   padding: 0.25vw;
 }
-
 @media (max-width: 650px) {
   body {
     display: block;
