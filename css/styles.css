@@ -121,7 +121,9 @@ h2.headline {
 h2 a:hover {
   color: #eff5f2;
 }
-
+ul {
+  list-style: none;
+}
 hr {
   border: dotted #7b706b 6px;
   border-bottom: none;
@@ -189,7 +191,18 @@ footer {
   text-align: center;
   bottom: 0;
   width: 100%;
-  /* padding-bottom: 5vh; */
+}
+
+footer img {
+  max-width: 25px;
+}
+
+footer ul li {
+  padding: .25vw;
+}
+
+footer ul {
+  display: flex;
 }
 
 
