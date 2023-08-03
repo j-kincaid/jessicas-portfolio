@@ -203,6 +203,8 @@ footer ul li {
 
 footer ul {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 
