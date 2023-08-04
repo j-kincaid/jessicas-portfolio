@@ -107,7 +107,8 @@ p {
   margin-bottom: 3.5em;
 }
 
-h2.skill {
+h2.skill,
+h2.skill a {
   font-size: 1.8rem;
   line-height: 40px;
   font-weight: 300;
@@ -118,8 +119,14 @@ h2.headline {
   font-size: 2.5rem;
   font-weight: lighter;
 }
-h2 a:hover {
-  color: #eff5f2;
+h2.skill a:hover {
+  color: #fff;
+}
+h2.skill a:active {
+  color: #e1a80b;
+}
+h2.skill a:visited {
+  color: #e1a80b;
 }
 ul {
   list-style: none;
@@ -197,9 +204,6 @@ footer img {
   max-width: 25px;
 }
 
-footer ul li {
-  padding: .25vw;
-}
 
 footer ul {
   display: flex;
@@ -211,6 +215,7 @@ footer ul {
 p.copyright {
   font-weight: normal;
   color: #000;
+  font-size: 1.25rem;
 }
 
 @media (max-width: 650px) {
