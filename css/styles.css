@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+
 html {
   display: block;
 }
+
 * {
   box-sizing: border-box;
   font-family: "Georama", sans-serif;
   width: 100%;
   font-weight: lighter;
 }
+
 body {
   /* display: block; */
   background-color: rgba(0, 0, 0, 0.9);
@@ -28,6 +31,7 @@ body {
   border-radius: 20px;
   position: relative;
 }
+
 .flicker {
   width: 30px;
   height: 30px;
@@ -60,7 +64,7 @@ body {
   transform: translateX(40px);
 }
 
-.dark > * {
+.dark>* {
   color: rgb(250, 239, 196);
   color: #0f0e0d;
 }
@@ -69,6 +73,7 @@ header {
   color: rgba(255, 255, 255, 0.9);
   background-color: rgba(0, 0, 0, 0.55);
 }
+
 main {
   display: flex;
   flex-wrap: wrap;
@@ -79,20 +84,22 @@ article.skill-row {
   flex: 400px;
   margin-right: 6vw;
 }
+
 article.skill-row,
 h1.name,
 h2.headline {
   display: block;
   margin-left: 4vw;
 }
+
 h1 {
   display: block;
   line-height: 70px;
   font-size: 6vw;
   font-weight: lighter;
 }
-h1,
-h3 {
+
+h1 {
   color: rgba(255, 255, 255, 0.55);
 }
 
@@ -119,29 +126,21 @@ h2.headline {
   font-size: 2.5rem;
   font-weight: lighter;
 }
+
 h2.skill a:hover {
   color: #fff;
 }
+
 h2.skill a:active {
   color: #e1a80b;
 }
+
 h2.skill a:visited {
   color: #e1a80b;
 }
+
 ul {
   list-style: none;
-}
-hr {
-  border: dotted #7b706b 6px;
-  border-bottom: none;
-  width: 4%;
-  margin: 10px auto;
-}
-
-h3 {
-  color: #4c45fd;
-  text-decoration: none;
-  font-size: 20px;
 }
 
 a {
@@ -169,11 +168,6 @@ img.crit-badge {
   padding-bottom: 5px;
 }
 
-/* .comptia-badge {
-  width: 46%;
-  height: 63%;
-} */
-
 img.django-image,
 img.comptia-badge,
 img.crit-badge {
@@ -190,7 +184,7 @@ footer {
   clear: both;
   position: fixed;
   color: #000;
-  height: 9vh;
+  height: 8vh;
   overflow: hidden;
   display: block;
   font-size: 1.5rem;
@@ -201,7 +195,7 @@ footer {
 }
 
 footer img {
-  max-width: 25px;
+  max-width: 15%;
 }
 
 
@@ -214,8 +208,8 @@ footer ul {
 
 p.copyright {
   font-weight: normal;
-  color: #000;
-  font-size: 1.25rem;
+  color: #525050;
+  font-size: 2.0rem;
 }
 
 @media (max-width: 650px) {
@@ -223,6 +217,7 @@ p.copyright {
     display: block;
     font-size: 80%;
   }
+
   p {
     position: relative;
     padding: 1rem;
