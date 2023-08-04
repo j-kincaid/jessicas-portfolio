@@ -195,7 +195,7 @@ footer {
 }
 
 footer img {
-  max-width: 15%;
+  max-width: 10%;
 }
 
 
@@ -203,8 +203,11 @@ footer ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  height: 200%;
 }
-
+footer ul li {
+  margin-bottom: 5.0rem;
+}
 
 p.copyright {
   font-weight: normal;
