@@ -1,14 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+
 html {
   display: block;
 }
+
 * {
   box-sizing: border-box;
   font-family: "Georama", sans-serif;
   width: 100%;
   font-weight: lighter;
 }
+
 body {
+  /* display: block; */
   background-color: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 0.9);
   font-size: 0.5rem;
@@ -27,6 +31,7 @@ body {
   border-radius: 20px;
   position: relative;
 }
+
 .flicker {
   width: 30px;
   height: 30px;
@@ -59,48 +64,49 @@ body {
   transform: translateX(40px);
 }
 
-.dark > * {
+.dark>* {
   color: rgb(250, 239, 196);
   color: #0f0e0d;
 }
 
-header,
-footer {
-  display: block;
+header {
   color: rgba(255, 255, 255, 0.9);
   background-color: rgba(0, 0, 0, 0.55);
 }
+
 main {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 15vh;
 }
 
 article.skill-row {
   flex: 400px;
   margin-right: 6vw;
 }
+
 article.skill-row,
 h1.name,
 h2.headline {
   display: block;
   margin-left: 4vw;
 }
+
 h1 {
   display: block;
   line-height: 70px;
   font-size: 6vw;
   font-weight: lighter;
 }
-h1,
-h3 {
+
+h1 {
   color: rgba(255, 255, 255, 0.55);
 }
 
 h2 {
-  color: #9895ee;
+  color: #e1a80b;
   margin-bottom: 2rem;
 }
-
 
 p {
   font-size: 0.9rem;
@@ -108,8 +114,9 @@ p {
   margin-bottom: 3.5em;
 }
 
-h2.skill {
-  font-size: 2em;
+h2.skill,
+h2.skill a {
+  font-size: 1.8rem;
   line-height: 40px;
   font-weight: 300;
   margin: 2rem 0;
@@ -119,21 +126,21 @@ h2.headline {
   font-size: 2.5rem;
   font-weight: lighter;
 }
-h2 a:hover {
-  color: #eff5f2;
+
+h2.skill a:hover {
+  color: #fff;
 }
 
-hr {
-  border: dotted #7b706b 6px;
-  border-bottom: none;
-  width: 4%;
-  margin: 10px auto;
+h2.skill a:active {
+  color: #e1a80b;
 }
 
-h3 {
-  color: #4c45fd;
-  text-decoration: none;
-  font-size: 20px;
+h2.skill a:visited {
+  color: #e1a80b;
+}
+
+ul {
+  list-style: none;
 }
 
 a {
@@ -152,22 +159,18 @@ a {
 img.django-image,
 img.comptia-badge,
 img.beadwork-image,
-img.trivial-image {
+img.trivial-image,
+img.crit-badge {
   flex: 2;
   border: 0.5px solid darkgray;
   border-radius: 2%;
   max-width: 40%;
-  max-height: 40%;
   padding-bottom: 5px;
 }
 
-/* .comptia-badge {
-  width: 46%;
-  height: 63%;
-} */
-
-.django-image,
-.comptia-badge {
+img.django-image,
+img.comptia-badge,
+img.crit-badge {
   order: 2;
   margin-bottom: 20px;
 }
@@ -178,21 +181,41 @@ p.paragraph-right {
 }
 
 footer {
-  color: #fff;
+  clear: both;
+  position: fixed;
+  color: #000;
+  height: 8vh;
+  overflow: hidden;
+  display: block;
   font-size: 1.5rem;
-  background-color: #6d68fd;
-  padding: 50px 0 20px;
+  background: #e1a80b;
   text-align: center;
+  bottom: 0;
+  width: 100%;
 }
 
-footer ul {
-  list-style-type: none;
-  text-decoration: none;
-  margin: 40px auto;
-  color: #fff;
+footer img {
+  max-width: 10%;
 }
-footer ul li {
-  padding: 0.25vw;
+
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 200%;
+}
+
+footer ul li img {
+  max-width: 2.0rem; 
+  margin-bottom: 6.25rem;
+}
+
+p.copyright {
+  font-weight: normal;
+  color: #525050;
+  font-size: 1.65rem;
+  margin-bottom: 8.25rem;
 }
 
 @media (max-width: 650px) {
@@ -200,6 +223,7 @@ footer ul li {
     display: block;
     font-size: 80%;
   }
+
   p {
     position: relative;
     padding: 1rem;
