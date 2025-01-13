@@ -77,9 +77,9 @@ h1 {
     margin: 50px auto 0 auto;
 } 
 
-h2 {
+h2.skill {
     font-family: 'Tiro Devanagari Sanskrit', serif;
-    font-size: 2.0rem;  
+    font-size: 0.75rem;  
     font-weight: normal; 
     padding-bottom: 10px;
     z-index: 3; 
@@ -113,6 +113,11 @@ p {
     margin: auto;
 }
 
+p.paragraph-left, 
+p.paragraph-right {
+    font-size: 1em;
+}
+
 div.contact-me {
     width: 40%;
     margin: 40px auto 60px;
@@ -128,11 +133,16 @@ div.contact-me {
 .django {
     border-radius: 20%;
     padding: 30px;
-    width: 45%;
+    width: 50%;
 }
 
-.beadwork-image {
+.beadwork-image, 
+.MMC-image {
     float: right;
+}
+
+img.MMC-image {
+    max-width: 4vw;
 }
 .django,
 .trivial-image {
@@ -168,10 +178,7 @@ ul.bottom-container {
 .bottom-container a:hover {
     color: #fffde7;
 } 
-
-.btn {
-    
-}
+ 
 a.btn {
     margin: auto 40px;
     margin-bottom: 100px;
