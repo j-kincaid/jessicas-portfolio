@@ -5,9 +5,9 @@ html {
 * {
   box-sizing: border-box;
   font-family: "Georama", sans-serif;
-  width: 100%;
   font-weight: lighter;
 }
+
 body {
   background-color: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 0.9);
@@ -156,18 +156,12 @@ img.trivial-image {
   flex: 2;
   border: 0.5px solid darkgray;
   border-radius: 2%;
-  max-width: 40%;
-  max-height: 40%;
+  max-width: 50%;
   padding-bottom: 5px;
 }
 
-/* .comptia-badge {
-  width: 46%;
-  height: 63%;
-} */
-
 .django-image,
-.comptia-badge {
+.mmc-image {
   order: 2;
   margin-bottom: 20px;
 }
