@@ -92,7 +92,7 @@ h1 {
   font-weight: lighter;
 }
 h1,
-h3 {
+h5 {
   color: rgba(255, 255, 255, 0.55);
 }
 
@@ -100,14 +100,15 @@ h2 {
   color: #9895ee;
   margin-bottom: 2rem;
 }
-
+h5 {
+  font-size: 1.0rem;
+}
 
 p {
   font-size: 0.9rem;
   line-height: 2;
-
-  margin-top: 4em;
-  margin-bottom: 3.5em;
+  margin-top: 2em;
+  /* margin-bottom: 3.5em; */
 }
 
 h2.skill {
@@ -135,12 +136,12 @@ hr {
 h3 {
   color: #4c45fd;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 a {
-  color: #8581fe;
-  font-size: 1.3rem;
+  color: #e48267;
+  /* font-size: 1.3rem; */
   /* margin: 10px 20px; */
   text-decoration: none;
 }
@@ -154,12 +155,12 @@ a {
 img.django-image,
 img.comptia-badge,
 img.beadwork-image,
-img.trivial-image {
+img.trivial-image,
+img.mne-image {
   flex: 2;
   border: 0.5px solid darkgray;
   border-radius: 2%;
-  max-width: 50%;
-  padding-bottom: 5px;
+  max-width: 250px;
 }
 
 .django-image,
