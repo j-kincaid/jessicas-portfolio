@@ -11,7 +11,7 @@ html {
 body {
   background-color: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 0.9);
-  font-size: 0.5rem;
+  font-size: 2.5rem;
   font-family: "Georama", sans-serif;
   font-weight: normal;
   line-height: 1.4;
@@ -88,8 +88,8 @@ h2.headline {
 }
 h1 {
   display: block;
-  line-height: 70px;
-  font-size: 6vw;
+  line-height: 40px;
+  font-size: 4vw;
   font-weight: lighter;
 }
 h1,
@@ -99,22 +99,20 @@ h5 {
 
 h2 {
   color: #9895ee;
-  margin-bottom: 2rem;
+  margin-bottom: 1.0rem;
 }
 h5 {
-  font-size: 1.0rem;
+  font-size: 2.0rem;
 }
-
 
 p {
   font-size: 0.9rem;
   line-height: 2;
   margin-top: 2em;
-  /* margin-bottom: 3.5em; */
 }
 
 h2.skill {
-  font-size: 2em;
+  font-size: 5em;
   line-height: 40px;
   font-weight: 300;
   margin: 2rem 0;
@@ -126,12 +124,10 @@ h2.headline {
   color:rgb(241, 151, 7);
 }
 
-h2 a:hover {
-  color: #eff5f2;
-}
-
 h5.skill {
   color:rgb(241, 151, 7);
+  font-size: 1.75rem;
+  margin-bottom: 1.0rem;
 }
 
 hr {
@@ -159,14 +155,24 @@ a {
 }
 
 img.django-image,
-img.comptia-badge,
 img.beadwork-image,
 img.trivial-image,
+img.mmc-image,
 img.mne-image {
   flex: 2;
   border: 0.5px solid darkgray;
   border-radius: 2%;
-  max-width: 250px;
+}
+
+img.beadwork-image,
+img.trivial-image,
+img.mmc-image,
+img.mne-image {
+  max-width: 70%;
+}
+
+img.django-image {
+  max-width: 40%;
 }
 
 .django-image,
@@ -175,9 +181,12 @@ img.mne-image {
   margin-bottom: 20px;
 }
 
+p.caption {
+  margin-top: 0;
+}
 p.paragraph-left,
 p.paragraph-right {
-  font-size: 0.9rem;
+  font-size: 1.05rem;
 }
 
 footer {
@@ -198,15 +207,64 @@ footer ul li {
   padding: 0.25vw;
 }
 
+/* -------------------------------Media Queries------------------------------------- */
+
 @media (max-width: 650px) {
   body {
     display: block;
     font-size: 80%;
   }
-  p {
+
+  img.beadwork-image,
+  img.trivial-image,
+  img.mmc-image,
+  img.mne-image {
+  max-width: 80%;
+}
+img.django-image {
+  max-width: 70%;
+}
+  p.paragraph-right, 
+  p.paragraph-left {
     position: relative;
-    padding: 1rem;
-    font-size: 100%;
+    padding: 2.5rem;
+    font-size: 5.0rem;
     margin: -3rem 0 2rem 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    display: block;
+    font-size: 100%;
+  }
+
+  h1 {
+    font-size: 9vw;
+  }
+
+  h2.headline {
+    font-size: 4.0rem;
+  }
+  h5.skill {
+    font-size: 4.0rem;
+  }
+ 
+  img.beadwork-image,
+  img.trivial-image,
+  img.mne-image {
+    max-width: 90%;
+}
+  img.mmc-image,
+  img.django-image {
+    max-width: 75%;
+  }
+
+  p.paragraph-right, 
+  p.paragraph-left {
+    position: relative;
+    padding: 2.5rem;
+    font-size: 6.0rem;
+    margin: -1rem 0 2rem 1rem;
   }
 }
