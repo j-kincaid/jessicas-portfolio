@@ -80,16 +80,16 @@ article.skill-row {
   flex: 400px;
   margin-right: 6vw;
 }
+
 article.skill-row,
-h1.name,
-h2.headline {
+h1,
+h2 {
   display: block;
   margin-left: 4vw;
 }
 h1 {
   display: block;
   line-height: 40px;
-  font-size: 4vw;
   font-weight: lighter;
 }
 h1,
@@ -97,10 +97,6 @@ h5 {
   color: rgba(255, 255, 255, 0.55);
 }
 
-h2 {
-  color: #9895ee;
-  margin-bottom: 1.0rem;
-}
 h5 {
   font-size: 2.0rem;
 }
@@ -112,13 +108,12 @@ p {
 }
 
 h2.skill {
-  font-size: 5em;
   line-height: 40px;
   font-weight: 300;
   margin: 2rem 0;
 }
 
-h2.headline {
+h2 {
   font-size: 2.5rem;
   font-weight: lighter;
   color:rgb(241, 151, 7);
@@ -240,11 +235,11 @@ img.django-image {
   }
 
   h1 {
-    font-size: 9vw;
+    font-size: 50rem;
   }
 
-  h2.headline {
-    font-size: 4.0rem;
+  h2 {
+    font-size: 5.0rem;
   }
   h5.skill {
     font-size: 4.0rem;
