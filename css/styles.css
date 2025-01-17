@@ -11,7 +11,7 @@ html {
 body {
   background-color: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 0.9);
-  font-size: 2.5rem;
+  font-size: 0.5rem;
   font-family: "Georama", sans-serif;
   font-weight: normal;
   line-height: 1.4;
@@ -71,6 +71,25 @@ footer {
   color: rgba(255, 255, 255, 0.9);
   background-color: rgba(0, 0, 0, 0.55);
 }
+
+h1 {
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+h1.name {
+  font-size: 4.75vw;
+  margin: 0;
+  padding: 5vw 3vw 0 5vw;
+  font-weight: lighter;
+  color: rgba(255,255,255,0.55);
+}
+
+h1 a:hover {
+  color: #eff5f2;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
@@ -102,9 +121,9 @@ h5 {
 }
 
 p {
-  font-size: 0.9rem;
-  line-height: 2;
-  margin-top: 2em;
+    display: inline-block;
+    font-size: 1em;
+    margin-bottom: 1.8em;
 }
 
 h2.skill {
@@ -113,29 +132,24 @@ h2.skill {
   margin: 2rem 0;
 }
 
-h2 {
-  font-size: 2.5rem;
-  font-weight: lighter;
-  color:rgb(241, 151, 7);
-}
-
 h5.skill {
   color:rgb(241, 151, 7);
   font-size: 1.75rem;
   margin-bottom: 1.0rem;
 }
 
-hr {
-  border: dotted #7b706b 6px;
-  border-bottom: none;
-  width: 4%;
-  margin: 10px auto;
+
+h2.headline {
+  font-size: 2.5rem;
+  font-weight: lighter;
+  padding: 0 2vw;
+  padding: 0.25vw 0 0 2vw;
+  color: rgba(255,255,255,0.55);
 }
 
 h3 {
-  color: #4c45fd;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 2em;
 }
 
 a {
@@ -176,13 +190,23 @@ img.django-image {
   margin-bottom: 20px;
 }
 
+
+p {
+  display: inline-block;
+  font-size: 1em;
+  margin-bottom: 1.8em;
+}
+
 p.caption {
   margin-top: 0;
+  font-size: 2.25em;
 }
+
 p.paragraph-left,
 p.paragraph-right {
-  font-size: 1.05rem;
+  font-size: 2.5em;
 }
+
 
 footer {
   color: #fff;
@@ -219,11 +243,17 @@ footer ul li {
 img.django-image {
   max-width: 70%;
 }
+p.caption {
+  margin-top: 0;
+  font-size: 2.75em;
+}
+
+
   p.paragraph-right, 
   p.paragraph-left {
     position: relative;
-    padding: 2.5rem;
-    font-size: 5.0rem;
+    padding: 4.5rem;
+    font-size: 50.0em;
     margin: -3rem 0 2rem 1rem;
   }
 }
@@ -231,7 +261,6 @@ img.django-image {
 @media (max-width: 375px) {
   body {
     display: block;
-    font-size: 100%;
   }
 
   h1 {
@@ -239,10 +268,10 @@ img.django-image {
   }
 
   h2 {
-    font-size: 5.0rem;
+    font-size: 5.0em;
   }
   h5.skill {
-    font-size: 4.0rem;
+    font-size: 4.0em;
   }
  
   img.beadwork-image,
@@ -258,8 +287,8 @@ img.django-image {
   p.paragraph-right, 
   p.paragraph-left {
     position: relative;
-    padding: 2.5rem;
-    font-size: 6.0rem;
+    padding: 2.5em;
+    font-size: 600em;
     margin: -1rem 0 2rem 1rem;
   }
 }
