@@ -72,17 +72,29 @@ footer {
   background-color: rgba(0, 0, 0, 0.55);
 }
 
+article.skill-row,
+h1,
+h2.headline {
+  display: block;
+  margin-left: 4vw;
+}
+
 h1 {
+  display: block;
   line-height: 70px;
-  font-weight: 300;
-  font-size: 8em;
-  padding: 5vw 3vw 0 5vw;
+  font-size: 10em;
   font-weight: lighter;
-  color: rgba(255,255,255,0.55);
+  color: rgba(255, 255, 255, 0.55);
 }
 
 h1 a:hover {
   color: #eff5f2;
+} 
+
+h2.headline {
+  font-size: 6vw
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 2rem;
 }
 
 main {
@@ -101,6 +113,7 @@ h2 {
   display: block;
   margin-left: 4vw;
 }
+
 h1 {
   display: block;
   line-height: 40px;
@@ -133,14 +146,22 @@ h5.skill {
   margin-bottom: 1.0rem;
 }
 
-
 h2.headline {
-  font-size: 6.5em;
+  font-size: 4rem;
   font-weight: lighter;
-  padding: 0 3vw 0 5vw;
-  color: rgba(255,255,255,0.55);
 }
 
+h2.skill a:hover {
+  color: #fff;
+}
+
+h2.skill a:active {
+  color: #e1a80b;
+}
+
+h2.skill a:visited {
+  color: #e1a80b;
+}
 h3 {
   text-decoration: none;
   font-size: 2em;
@@ -165,14 +186,16 @@ img.mne-image {
   flex: 2;
   border: 0.5px solid darkgray;
   border-radius: 2%;
+  max-width: 45%;
+  padding-bottom: 5px;
 }
 
-img.beadwork-image,
+/* img.beadwork-image,
 img.trivial-image,
 img.mmc-image,
 img.mne-image {
   max-width: 70%;
-}
+} */
 
 img.django-image {
   max-width: 40%;
@@ -222,60 +245,17 @@ footer ul li {
 
 /* -------------------------------Media Queries------------------------------------- */
 
+
 @media (max-width: 650px) {
   body {
     display: block;
     font-size: 80%;
   }
 
-  img.beadwork-image,
-  img.trivial-image,
-  img.mmc-image,
-  img.mne-image {
-  max-width: 80%;
-}
-img.django-image {
-  max-width: 70%;
-}
-
-  p.paragraph-right, 
-  p.paragraph-left {
+  p {
     position: relative;
-    padding: 4.5rem;
+    padding: 1rem;
     margin: -3rem 0 2rem 1rem;
   }
 }
 
-@media (max-width: 375px) {
-  body {
-    display: block;
-  }
-
-  h1 {
-    font-size: 15em;
-  }
-
-  h2 {
-    font-size: 5.0em;
-  }
-  h5.skill {
-    font-size: 4.0em;
-  }
- 
-  img.beadwork-image,
-  img.trivial-image,
-  img.mne-image {
-    max-width: 90%;
-}
-  img.mmc-image,
-  img.django-image {
-    max-width: 75%;
-  }
-
-  p.paragraph-right, 
-  p.paragraph-left {
-    position: relative;
-    padding: 2.5em;
-    margin: -1rem 0 2rem 1rem;
-  }
-}
